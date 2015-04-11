@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Vegur-Light';
-    src: url('/assets/Vegur-Light.otf') format('opentype');
+    src: url(font-path('Vegur-Light.otf')) format('opentype');
 }
 
 @font-face {
     font-family: 'Vegur-Regular';
-    src: url('/assets/Vegur-Regular.otf') format('opentype');
+    src: url(font-path('Vegur-Regular.otf')) format('opentype');
 }
 
 /* Universal */
