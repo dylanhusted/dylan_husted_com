@@ -1,6 +1,6 @@
 DylanHustedCom::Application.routes.draw do
   root 'home#home'
-  resources :startups, only: [:show]
+  resources :startups, only: [:show, :index]
 
 
   # The priority is based upon order of creation: first created -> highest priority.
