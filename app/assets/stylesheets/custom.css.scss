@@ -1,0 +1,155 @@
+@import "bootstrap";
+
+@font-face {
+    font-family: 'Vegur-Light';
+    src: url(font-path('/assets/Vegur-Light.otf')) format('opentype')
+}
+
+@font-face {
+    font-family: 'Vegur-Regular';
+    src: url(font-path('/assets/Vegur-Regular.otf')) format('opentype')
+}
+
+/* Universal */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+	font-family: Vegur-Light;
+	color: #756AFF;
+	margin: 0 0 50px; /* 200px = footer height */
+	overflow-x: hidden;
+}
+
+a {
+	color: #756AFF;
+	text-decoration: none;
+	&:hover {
+		color: #756AFF;
+		text-decoration: underline;
+	}
+}
+
+p {
+	font-size: 1.2em;
+	color: #474747;
+}
+
+.center {
+	width: 100%;
+	text-align: center;
+}
+
+.stripe {
+	width: 105%;
+	line-height: 50%;
+	margin-left: -5%;
+	background-color: #756AFF;
+	top: 0;
+	position: absolute;
+	z-index: 1;
+}
+
+.dylan {
+	display: inline-block;
+	.pipes_and_pic {
+		width: 75%;
+		margin-left: -9px;
+		position: relative;
+	}
+
+	.name {
+		font-family: Vegur-Regular;
+		margin-left: 80px;
+	}
+
+	.social-media {
+		margin-left: 28px;
+	}
+}
+
+footer {
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #ABA9FF;
+    color: #474747;
+    text-align: center;
+    a {
+    	color: #474747;
+    }
+}
+
+.footer-left {
+	float: left;
+	margin-left: 1%;
+	margin-top: 15px;
+	display: inline-block;
+}
+
+.footer-middle {
+	margin-top: 15px;
+	display: inline-block;
+}
+
+.footer-right {
+	float: right;
+	margin-top: 15px;
+	margin-right: 1%;
+	display: inline-block;
+}
+
+.top-h-wrapper {
+	display: inline-block;
+	position: absolute;
+	margin-top: 70px;
+	width: 135%;
+	margin-left: -35%;
+	text-align: center;
+	z-index: -1;
+	h1 {
+		font-size: 4em;
+	}
+	.h2-grey {
+	  color: #474747;
+	}
+}
+
+/* Home Page */	
+
+.pipeline {
+	width: 100%;
+	position: relative;
+	left: 0;
+	margin-top: -185px;
+	z-index: -1;
+}
+
+/* Startup Pages */
+
+.container {
+	position: relative;
+	width: 58%;
+	background-color: #E3E3FF;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	padding: 1%;
+}
+
+.logo-wrapper {
+	padding: 1%;
+	background-color: white;
+	border-radius: 10px;
+	position: absolute;
+}
+
+
+
+

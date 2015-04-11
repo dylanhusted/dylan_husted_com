@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="stripe">&nbsp;</div>
+<div class="dylan">
+	<%= link_to image_tag('pipes_and_pic.png', class: 'pipes_and_pic'), root_url %>
+	<br>
+	<h1 class="name"><%= link_to 'Dylan Husted', root_url %></h1>
+	<h2 class="social-media">
+		<%= link_to 'Twitter', 'https://twitter.com/__________Dylan' %>
+		•
+		<%= link_to 'LinkedIn', 'https://www.linkedin.com/pub/dylan-husted/4b/3a9/a75' %>
+		•
+		<%= link_to 'GitHub', 'https://github.com/dylanhusted' %>
+	</h2>
+</div>
+<%= yield %>
+<%= render 'layouts/footer' %>
+</body>
+</html>

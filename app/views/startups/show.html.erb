@@ -1,0 +1,29 @@
+<%= provide(:title, "#{@startup.name}") %>
+<div class="top-h-wrapper">
+	<h1><%= link_to @startup.name, @startup.website %></h1>
+	<h2 class="h2-grey"><%= @startup.bio %></h2>
+</div>
+<br>
+<br>
+<div class="container">
+	<h1>Logo</h1>
+	<div class="logo-wrapper">
+		<%= image_tag @startup.full_logo, alt: "#{@startup.name} - Logo", title: "#{@startup.name} - Logo" %>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1>Idea</h1>
+	<p><%= @startup.description %></p>
+	<h1>Current Stage</h1>
+	<p><%= @startup.stage.capitalize %></p>
+	<h1>Relevant Links</h1>
+	<%= @startup.links.html_safe %>
+	<div class="center">
+		<% case @startup.stage %>
+		<% when 'launch' %>
+		<%= link_to "Check it out!", @startup.website, class: 'btn btn-large btn-primary' %>
+		<% end %>
+	</div>	
+</div>
