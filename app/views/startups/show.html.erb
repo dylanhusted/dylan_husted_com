@@ -8,8 +8,10 @@
 <div class="left-push"></div>
 <div class="container">
 	<h1>Logo</h1>
+	<div class="logo-wrapper-wrapper">
 	<div class="logo-wrapper">
-		<%= image_tag @startup.full_logo, alt: "#{@startup.name} - Logo", title: "#{@startup.name} - Logo" %>
+		<%= image_tag @startup.full_logo, alt: "#{@startup.name} - Logo", title: "#{@startup.name} - Logo", class: 'full-logo' %>
+	</div>
 	</div>
 	<br>
 	<br>
@@ -20,7 +22,7 @@
 	<h1>Current Stage</h1>
 	<p><%= @startup.stage.capitalize %></p>
 	<h1>Relevant Links</h1>
-	<%= @startup.links.html_safe %>
+	<%= @startup.links.html_safe if @startup.links.nil? != true %>
 	<div class="center">
 		<% case @startup.stage %>
 		<% when 'launch' %>

@@ -9,35 +9,40 @@
 	<h1>Launched</h1>
 	<br>
 	<% @launch_stage.each do |startup| %>
-		<%= link_to image_tag(startup.full_logo), startup_path(startup.id) %>
+		<%= link_to image_tag(startup.full_logo, class: 'full-logo'), startup_path(startup.id) %>
+		<br>
 		<br>
 	<% end %>
 	<br>	
 	<h1>In Development</h1>
 	<br>
 	<% @development_stage.each do |startup| %>
-		<%= link_to image_tag(startup.full_logo), startup_path(startup.id) %>
+		<%= link_to image_tag(startup.full_logo, class: 'full-logo'), startup_path(startup.id) %>
+		<br>
 		<br>
 	<% end %>
 	<br>
 	<h1>Pursuing Financing</h1>
 	<br>
 	<% @financing_stage.each do |startup| %>
-		<%= link_to image_tag(startup.full_logo), startup_path(startup.id) %>
+		<%= link_to image_tag(startup.full_logo, class: 'full-logo'), startup_path(startup.id) %>
+		<br>
 		<br>
 	<% end %>
 	<br>
 	<h1>Market Research Stage</h1>
 	<br>
 	<% @research_stage.each do |startup| %>
-		<%= link_to image_tag(startup.full_logo), startup_path(startup.id) %>
+		<%= link_to image_tag(startup.full_logo, class: 'full-logo'), startup_path(startup.id) %>
+		<br>
 		<br>
 	<% end %>
 	<br>
 	<h1>Just An Idea</h1>
 	<br>
 	<% @idea_stage.each do |startup| %>
-		<%= link_to image_tag(startup.full_logo), startup_path(startup.id) %>
+		<%= link_to image_tag(startup.full_logo, class: 'full-logo'), startup_path(startup.id) %>
+		<br>
 		<br>
 	<% end %>
 </div>

@@ -125,6 +125,11 @@ footer {
 	}
 }
 
+.full-logo {
+	max-width: 200px;
+	max-height: 70px;
+}
+
 /* Home Page */	
 
 .pipeline {
@@ -135,10 +140,32 @@ footer {
 	z-index: -1;
 }
 
+.idea-stage {
+	position: absolute;
+	left: 10.5%;
+	top: 69%;
+}
+
+.research-stage {
+	position: absolute;
+	left: 34%;
+	top: 81.5%;
+}
+
+.financing-stage {
+	position: absolute;
+}
+
+.development-stage {
+	position: absolute;
+	right: 35%;
+	top: 44%;
+}
+
 .launch-stage {
 	position: absolute;
 	right: 8%;
-	top: 28%;
+	top: 30%;
 }
 
 .square-logo {
@@ -163,6 +190,11 @@ footer {
 	margin-right: auto;
 	margin-bottom: 5%;
 	padding: 2%;
+}
+
+.logo-wrapper-wrapper{
+	position: relative;
+	clear: both;
 }
 
 .logo-wrapper {
