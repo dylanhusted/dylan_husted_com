@@ -162,7 +162,7 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 5%;
-	padding: 1%;
+	padding: 2%;
 }
 
 .logo-wrapper {
@@ -173,5 +173,17 @@ footer {
 }
 
 
+/* Static Pages */
 
+.about-content {
+	font-size: 1.2em;
+	line-height: 140%;
+}
+
+.contact-content {
+	text-align: center;
+	h3 {
+		color: #474747;
+	}
+}
 

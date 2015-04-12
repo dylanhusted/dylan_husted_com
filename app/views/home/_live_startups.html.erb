@@ -1,0 +1,25 @@
+<div class="idea-stage">
+	<% @idea_stage.each do |startup| %>
+		<%= link_to image_tag(startup.square_logo, class: 'square-logo'), startup_path(startup.id) %>
+	<% end %>
+</div>
+<div class="research-stage">
+	<% @research_stage.each do |startup| %>
+		<%= link_to image_tag(startup.square_logo, class: 'square-logo'), startup_path(startup.id) %>
+	<% end %>
+</div>
+<div class="financing-stage">
+	<% @financing_stage.each do |startup| %>
+		<%= link_to image_tag(startup.square_logo, class: 'square-logo'), startup_path(startup.id) %>
+	<% end %>
+</div>
+<div class="development-stage">
+	<% @development_stage.each do |startup| %>
+		<%= link_to image_tag(startup.square_logo, class: 'square-logo'), startup_path(startup.id) %>
+	<% end %>
+</div>
+<div class="launch-stage">
+	<% @launch_stage.each do |startup| %>
+		<%= link_to image_tag(startup.square_logo, class: 'square-logo'), startup_path(startup.id) %>
+	<% end %>
+</div>
