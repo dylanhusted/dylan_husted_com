@@ -1,3 +1,4 @@
+
 @import "bootstrap";
 
 @font-face {
@@ -132,45 +133,46 @@ footer {
 
 /* Home Page */	
 
-.pipeline {
-	width: 100%;
-	position: relative;
-	left: 0;
+.pipeline-wrapper {
 	margin-top: -185px;
-	z-index: -1;
+	margin-bottom: 5%;
+	background-image: url(pipeline-blue-1600.png);
+	width: 1600px;
+	height: 686px;
+	.pipeline {
+		left: 0;
+		z-index: -1;
+	}
+	.idea-stage {
+		position: relative;
+		left: 10.5%;
+		bottom: -72%;
+	}
+	.research-stage {
+		position: relative;
+		left: 34.25%;
+		bottom: -80%;
+
+	}
+	.financing-stage {
+		position: relative;
+	}
+	.development-stage {
+		position: relative;
+		left: 62.4%;
+		bottom: -23%;
+	}
+	.launch-stage {
+		position: relative;
+		left: 89%;
+		bottom: 3.5%;
+	}
+	.square-logo {
+		width: 50px;
+	}
 }
 
-.idea-stage {
-	position: absolute;
-	left: 10.5%;
-	top: 69%;
-}
 
-.research-stage {
-	position: absolute;
-	left: 34%;
-	top: 81.5%;
-}
-
-.financing-stage {
-	position: absolute;
-}
-
-.development-stage {
-	position: absolute;
-	right: 35%;
-	top: 44%;
-}
-
-.launch-stage {
-	position: absolute;
-	right: 8%;
-	top: 30%;
-}
-
-.square-logo {
-	width: 50px;
-}
 
 /* Startup Pages */
 
@@ -218,4 +220,3 @@ footer {
 		color: #474747;
 	}
 }
-
