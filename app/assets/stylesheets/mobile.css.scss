@@ -1,0 +1,224 @@
+@import "bootstrap";
+
+@font-face {
+    font-family: 'Vegur-Light';
+    src: url(font-path('Vegur-Light.otf')) format('opentype');
+}
+
+@font-face {
+    font-family: 'Vegur-Regular';
+    src: url(font-path('Vegur-Regular.otf')) format('opentype');
+}
+
+/* Universal */
+
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+	font-family: Vegur-Regular, sans-serif;
+	color: #75AFFA;
+	margin: 0 0 50px; /* 200px = footer height */
+	overflow-x: hidden;
+}
+
+a {
+	color: #75AFFA;
+	text-decoration: none;
+	&:hover {
+		color: #75AFFA;
+		text-decoration: underline;
+	}
+}
+
+p {
+	font-size: 1.2em;
+	color: #474747;
+}
+
+h1, h2 {
+	font-family: Vegur-Light !important;
+}
+
+.center {
+	width: 100%;
+	text-align: center;
+}
+
+.stripe {
+	width: 105%;
+	line-height: 50%;
+	margin-left: -5%;
+	background-color: #75AFFA;
+	top: 0;
+	position: absolute;
+	z-index: 1;
+}
+
+.dylan {
+	display: inline-block;
+	font-family: Vegur-Light !important;
+	.pipes_and_pic {
+		width: 50%;
+		margin-left: -9px;
+		position: relative;
+	}
+
+	.name {
+		font-family: Vegur-Regular;
+		font-size: 1.2em;
+		margin-left: 78px;
+		margin-top: -2px;
+	}
+
+	.social-media {
+		margin-left: 28px;
+		visibility: hidden;
+	}
+}
+
+footer {
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #AACDFA;
+    color: #474747;
+    text-align: center;
+    a {
+    	color: #474747;
+    	font-size: 1.5em;
+    }
+}
+
+.footer-left {
+	float: left;
+	margin-left: 1%;
+	margin-top: 15px;
+	display: inline-block;
+}
+
+.footer-middle {
+	margin-top: 15px;
+	display: inline-block;
+}
+
+.footer-right {
+	float: right;
+	margin-top: 15px;
+	margin-right: 1%;
+	display: inline-block;
+}
+
+.top-h-wrapper {
+	display: inline;
+	text-align: center;
+	margin-top: 20px;
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	.h2-grey {
+	  color: #474747;
+	}
+}
+
+.full-logo {
+	max-width: 200px;
+	max-height: 70px;
+}
+
+/* Home Page */	
+
+.pipeline-wrapper {
+	margin-bottom: 5%;
+	background-image: image-url("mobile-pipeline-blue.png");
+	width: 650px;
+	height: 1402px;
+	margin-top: 85px;
+	.pipeline {
+		left: 0;
+		z-index: -1;
+	}
+	.idea-stage {
+		position: relative;
+		left: 36.5%;
+		bottom: -86%;
+	}
+	.research-stage {
+		position: relative;
+		left: 75.5%;
+		bottom: -64.25%;
+
+	}
+	.financing-stage {
+		position: relative;
+	}
+	.development-stage {
+		position: relative;
+		left: 31.5%;
+		bottom: -22.5%;
+	}
+	.launch-stage {
+		position: relative;
+		left: 76%;
+		bottom: 7.5%;
+	}
+	.square-logo {
+		width: 60px;
+	}
+}
+
+
+
+/* Startup Pages */
+
+.left-push {
+	display: inline-block;
+	width: 470px;
+	height: 0px;
+}
+
+.container {
+	width: 58%;
+	background-color: #DCEAFC;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	margin-top: 20px;
+	padding: 2%;
+}
+
+.logo-wrapper-wrapper{
+	position: relative;
+	clear: both;
+}
+
+.logo-wrapper {
+	padding: 1%;
+	background-color: white;
+	border-radius: 10px;
+	position: absolute;
+}
+
+
+/* Static Pages */
+
+.about-content {
+	font-size: 1.2em;
+	line-height: 140%;
+}
+
+.contact-content {
+	text-align: center;
+	h3 {
+		color: #474747;
+	}
+}
