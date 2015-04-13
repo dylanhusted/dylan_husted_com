@@ -75,6 +75,7 @@ h1, h2 {
 	}
 
 	.social-media {
+		margin-top: -10px;
 		margin-left: 28px;
 		font-size: 1.75em;
 	}
@@ -118,7 +119,7 @@ footer {
 	position: absolute;
 	margin-top: 70px;
 	width: 135%;
-	margin-left: -44%;
+	margin-left: -35%;
 	text-align: center;
 	z-index: -1;
 	h1 {
@@ -127,6 +128,10 @@ footer {
 	.h2-grey {
 	  color: #474747;
 	}
+}
+
+.home-top-h-wrapper {
+	margin-left: -44% !important;
 }
 
 .full-logo {
