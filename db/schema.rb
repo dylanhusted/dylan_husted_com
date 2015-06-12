@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150411172526) do
+ActiveRecord::Schema.define(version: 20150612191328) do
 
   create_table "startups", force: true do |t|
     t.string   "name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20150411172526) do
     t.string   "stage"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "role"
   end
 
   add_index "startups", ["stage"], name: "index_startups_on_stage"
